@@ -6,15 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    <label>Name</label>
+    <!-- <label>Name</label>
         <input id="userInput"></input>
     <input type="submit" value="submit" onclick="display()">
-    <div>Welcome <span id="output"><div>
+    <div>Welcome <span id="output"><div> -->
+
+
+    <!-- LASTNAME -->
+    <label>Last Name</label>
+        <input id="UserInput"></input>
+    <input type="submit" value="submit" onclick="displayLastName()">
+    <div>Senior<span id="outputLastName"></div>
+    
+    <!-- <input type="submit" value="submit" onclick="resetAll()"></input> -->
+
+
     <script>
         function display(){
             var input = document.getElementById('userInput').value;
             document.getElementById('output').textContent = input;
         }
+
+        function displayLastName(){
+            const input = document.getElementById('userInput').value;
+            document.getElementById('outputLastName').textContent = input;
+        }
+
+        function resetAll(){
+            const reseted = document.getElementById('userInput').value;
+            document.getElementById('outputLastName').textContent = null;
+        }
+
+        
     </script>
 </body>
 </html>
